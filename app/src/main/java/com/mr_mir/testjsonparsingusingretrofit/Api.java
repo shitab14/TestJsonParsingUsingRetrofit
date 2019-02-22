@@ -9,14 +9,6 @@ public interface Api {
     String BASE_URL = "https://raw.githubusercontent.com/appinion-dev/intern-dcr-data/master/";
 
     @GET("data.json")
-    Call<List<Data>> getProductGroupList();
+    Call<Data> getTheData();
 
-    @GET("data.json")
-    Call<List<Data>> getLiteratureList();
-
-    @GET("data.json")
-    Call<List<Data>> getGiftList();
-
-    @GET("data.json")
-    Call<List<Data>> getPhysicianSampleList();
 }
